@@ -1,0 +1,147 @@
+body {
+    background: url('/img/felt.png');
+    font-family: "Oswald";
+}
+
+.header {
+    width: 100%;
+    background: #333333;
+    border-bottom: 1px solid #ec971f;
+}
+
+.logo-text {
+    color: #ec971f;
+    font-size: 25pt;
+    line-height: 60px;
+    margin-left: 20px;
+    display: inline-block;
+    float: left;
+}
+
+.header-account-info {
+    display: inline-block;
+    float: right;
+    color: #ffffff;
+    margin: 6px 20px 4px 0;
+}
+
+.playfield {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.hand {
+    height: 140px;
+    display: inline-block;
+    transition: 2s;
+}
+
+.hand .card:first-child {
+    margin-left: 0;
+}
+
+.hand .card {
+    margin-left: -70px;
+}
+
+.hand.dealer {
+    margin-bottom: 20px;
+}
+
+.btn {
+    border-radius: 0;
+    background: #f0ad4e;
+    border: none;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    background: #cf8e32;
+    border: none;
+}
+
+.card {
+    text-align: left;
+    width: 100px;
+    height: 140px;
+    border-radius: 5px;
+    border: 1px solid #888888;
+    background: #ffffff url('/img/deck.png') no-repeat -294px 0;
+    display: inline-block;
+}
+
+.card.back {
+    background-position: -392px 0;
+}
+
+.card.diamonds {
+    background-position: 0 0;
+}
+
+.card.hearts {
+    background-position: -98px 0;
+}
+
+.card.spades {
+    background-position: -196px 0;
+}
+
+.card:before {
+    margin-left: 7px;
+    font-size: 15pt;
+}
+
+.card.back:before {
+    content: '';
+}
+
+.card.ace:before {
+    content: 'A';
+}
+
+.card.two:before {
+    content: '2';
+}
+
+.card.three:before {
+    content: '3';
+}
+
+.card.four:before {
+    content: '4';
+}
+
+.card.five:before {
+    content: '5';
+}
+
+.card.six:before {
+    content: '6';
+}
+
+.card.seven:before {
+    content: '7';
+}
+
+.card.eight:before {
+    content: '8';
+}
+
+.card.nine:before {
+    content: '9';
+}
+
+.card.ten:before {
+    content: '10';
+}
+
+.card.jack:before {
+    content: 'J';
+}
+
+.card.queen:before {
+    content: 'Q';
+}
+
+.card.king:before {
+    content: 'K';
+}
