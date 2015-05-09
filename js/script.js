@@ -36,15 +36,3 @@ function dealCard(suit, rank, dealer, callback) {
         }
     });
 }
-
-
-//Just an example hand
-$().ready(function() {
-    dealCard('hearts', 'ace', false, function() {
-        dealCard('clubs', 'ten', true, function() {
-            dealCard('diamonds', 'six', false, function() {
-                dealCard('back', '', true, function() {});
-            });
-        });
-    });
-});
